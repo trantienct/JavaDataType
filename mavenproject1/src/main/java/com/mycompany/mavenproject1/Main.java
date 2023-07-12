@@ -7,7 +7,6 @@ package com.mycompany.mavenproject1;
 // Thư viện Scanner cho phép nhận giá trị input
 import java.util.Scanner;
 /**
- *
  * @author trant
  */
 public class Main {
@@ -37,6 +36,49 @@ public class Main {
         double fDegree = (1.8 * number) + 32;
         System.out.println( number + " độ C tương ứng với " + String.format("%.2f", fDegree) + " độ F");
         // Tương tự cho các bài tập tiếp theo
-        /*  Bài tập 2 */
+
+        /* Bài tập 2: Viết chương trình cho phép nhập vào phút, và in ra màn hình năm và ngày
+        - Ví dụ: Hãy nhập số phút: 1440
+        - Kết quả mong muốn: 1440 phút tương đương với 0 năm 1 ngày
+        */
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Hãy nhập số phút: ");
+        int minutes = scanner.nextInt();
+
+        int minutesInYear = 60 * 24 * 365;
+        int minutesInDay = 60 * 24;
+
+        int years = minutes / minutesInYear;
+        int remainingMinutes = minutes % minutesInYear;
+        int days = remainingMinutes / minutesInDay;
+
+        System.out.println(minutes + " phút tưởng đương với " + years + " năm và " + days + " ngày.");
+
+        /* Bài tập 3: Viết chương trình tính toán chỉ số cơ thể BMI, với các giá trị nhập vào là height (inches) và weight (pounds)
+        Kết quả trả về là chỉ số BMI
+        - Ví dụ: Your height (inches): 72
+             Your weight (pounds): 160
+             - Kết quả mong muốn: Your BMI is 21.7
+         */
+
+        Scanner Scanner = new Scanner(System.in);
+
+        System.out.print("Chiều cao của bạn (inches): ");
+        double heightInInches = scanner.nextDouble();
+
+        System.out.print("Cân nặng của bạn (pounds): ");
+        double weightInPounds = scanner.nextDouble();
+
+        double heightInMeters = heightInInches * 0.0254;
+        double weightInKilograms = weightInPounds * 0.453592;
+
+        double bmi = weightInKilograms / (heightInMeters * heightInMeters);
+        double roundedBMI = Math.round(bmi * 10.0) / 10.0;
+
+        System.out.println("Chỉ số BMI của bạn là " + roundedBMI);
+
+
     }
 }
