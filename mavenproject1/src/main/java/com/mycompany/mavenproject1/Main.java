@@ -12,6 +12,7 @@ import java.util.Scanner;
 public class Main {
 /* Get input and  */
     public static void main(String[] args) {
+        // Message
         // Khởi tạo 1 đối tượng Scanner có tên là input. System.in là tham số đầu vào mặc định (Bàn phím)
         Scanner input = new Scanner(System.in);
         System.out.println("Hãy nhập độ C: ");
@@ -51,6 +52,7 @@ public class Main {
         int minutesInDay = 60 * 24;
 
         int years = minutes / minutesInYear;
+        // Hãy phân biệt giữa / và %. Kết quả trả về của mỗi toán tử là gì?
         int remainingMinutes = minutes % minutesInYear;
         int days = remainingMinutes / minutesInDay;
 
@@ -63,17 +65,24 @@ public class Main {
              - Kết quả mong muốn: Your BMI is 21.7
          */
 
+        /* Lưu ý: Biến không nên đặt tên theo kiểu viết hoa, có thể đặt theo quy tắc:
+        - 1: camelCase: viết thường chữ đầu, các chữ tiếp theo viết hoa. Ví dụ: yourNumber
+        - 2: viết thường, kèm theo dấu _. Ví dụ your_number
+        Biến Scanner được con khai báo nhưng không sử dụng. Biến này chú chưa thấy có tác dụng gì cả.
+        */
         Scanner Scanner = new Scanner(System.in);
 
         System.out.print("Chiều cao của bạn (inches): ");
+        // Tại sao lại sử dụng Double mà không phải Float hoặc các kiểu dữ liệu khác?
         double heightInInches = scanner.nextDouble();
 
         System.out.print("Cân nặng của bạn (pounds): ");
         double weightInPounds = scanner.nextDouble();
-
+        // Tại sao cần chuyển đổi thành đơn vị mét và kg trong khi giá trị nhập vào là pound và inch
         double heightInMeters = heightInInches * 0.0254;
         double weightInKilograms = weightInPounds * 0.453592;
 
+        // Chúng ta có công thức tính theo pound và inch, con hãy áp dụng công thức này
         double bmi = weightInKilograms / (heightInMeters * heightInMeters);
         double roundedBMI = Math.round(bmi * 10.0) / 10.0;
 
