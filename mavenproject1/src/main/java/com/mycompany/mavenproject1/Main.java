@@ -53,6 +53,10 @@ public class Main {
 
         int years = minutes / minutesInYear;
         // Hãy phân biệt giữa / và %. Kết quả trả về của mỗi toán tử là gì?
+        /* Phần trả lời:
+        - Toán tử chia `/` cho con biết kết quả khi con chia một số cho một số khác.
+        - Toán tử `%` sẽ cho con biết phần dư khi con chia một số cho một số khác.
+         */
         int remainingMinutes = minutes % minutesInYear;
         int days = remainingMinutes / minutesInDay;
 
@@ -70,20 +74,21 @@ public class Main {
         - 2: viết thường, kèm theo dấu _. Ví dụ your_number
         Biến Scanner được con khai báo nhưng không sử dụng. Biến này chú chưa thấy có tác dụng gì cả.
         */
-        Scanner Scanner = new Scanner(System.in);
+
 
         System.out.print("Chiều cao của bạn (inches): ");
         // Tại sao lại sử dụng Double mà không phải Float hoặc các kiểu dữ liệu khác?
+        /* Con sử dụng gấp đôi vì nó mang lại độ chính xác cao hơn so với float để tính số thập phân và đảm bảo
+         được khả năng tương thích tốt hơn, đồng thời có thể giảm thiểu được các lỗi làm tròn trong BMI
+        */
         double heightInInches = scanner.nextDouble();
 
         System.out.print("Cân nặng của bạn (pounds): ");
         double weightInPounds = scanner.nextDouble();
         // Tại sao cần chuyển đổi thành đơn vị mét và kg trong khi giá trị nhập vào là pound và inch
-        double heightInMeters = heightInInches * 0.0254;
-        double weightInKilograms = weightInPounds * 0.453592;
 
         // Chúng ta có công thức tính theo pound và inch, con hãy áp dụng công thức này
-        double bmi = weightInKilograms / (heightInMeters * heightInMeters);
+        double bmi = (weightInPounds / (heightInInches * heightInInches)) * 703;
         double roundedBMI = Math.round(bmi * 10.0) / 10.0;
 
         System.out.println("Chỉ số BMI của bạn là " + roundedBMI);
