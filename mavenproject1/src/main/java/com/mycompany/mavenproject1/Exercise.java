@@ -9,26 +9,27 @@ package com.mycompany.mavenproject1;
  * @author trant
  */
 public class Exercise {
-    /* 
-    Bài tập 1:
-    - Xem ví dụ về cách nhập dữ liệu từ bàn phím trong file Main.java
-    - Viết chương trình nhập vào độ C, sau đó in ra kết quả là độ F
-    - Công thức chuyển: độ F = ( 1.8 * độ C ) + 32
-    - Ví dụ: Hãy nhập độ C: 37
-    - Kết quả mong muốn (In ra màn hình): 37 độ C tương ứng với 98.6 độ F
-    */
-    
-    /* 
-    Bài tập 2: Viết chương trình cho phép nhập vào phút, và in ra màn hình năm và ngày
-    - Ví dụ: Hãy nhập số phút: 1440
-    - Kết quả mong muốn: 1440 phút tương đương với 0 năm 1 ngày
-    */
-    
-    /* 
-    Bài tập 3: Viết chương trình tính toán chỉ số cơ thể BMI, với các giá trị nhập vào là height (inches) và weight (pounds)
-    Kết quả trả về là chỉ số BMI
-    - Ví dụ: Your height (inches): 72
-             Your weight (pounds): 160
-    - Kết quả mong muốn: Your BMI is 21.7
-    */
+    // Commit Message: Giải bài tập 4,5,6 về [kiểu dữ liệu - DataType] int, char, double, float
+    /*
+    * Bài tập 4: Viết chương trình, cho phép người dùng nhập vào 3 ký tự, sau đó hiển thị đảo ngược các ký tự
+    * Ví dụ: Nhập ký tự: A
+    * Nhập ký tự: B
+    * Nhập ký tự: C
+    * Hiển thị ra màn hình: C B A
+    * */
+    /*
+    Bài tập 5:
+    Viết chương trình cho phép người dùng nhập vào 2 giá trị số, và hiển thị các nội dung sau:
+    - Tổng của 2 số
+    - Hiệu của 2 số
+    - Tích của 2 số
+    - Giá trị trung bình của 2 số
+    - Số lớn nhất trong 2 số
+    - Số nhỏ nhất trong 2 số
+     */
+    /*
+    Bài tập 6: Viết chương trình cho phép người dùng nhập vào 1 số, và in ra từng ký tự của số đó
+    - Ví dụ: Hãy nhập vào 1 số: 123456
+    - Kết quả mong muốn: 1 2 3 4 5 6
+     */
 }
