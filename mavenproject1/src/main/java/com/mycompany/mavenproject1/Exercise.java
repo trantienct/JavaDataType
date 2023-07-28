@@ -11,27 +11,41 @@ import java.util.Scanner;
 
 
 public class Exercise {
-    // Commit Message: Bài tập về Method và Loop
+    // Commit Message: Bài tập về String
    /*
-   Bài tập 18: Định nghĩa 1 method để đảo ngược số nhập vào từ bàn phím
-   - Ví dụ: Nhập vào 1 số: 12345
-   - Kết quả mong muốn: Số đảo ngược của 12345 là 54321
-    */
-    /*
-   Bài tập 19: Xem các ví dụ trong file main.java về các cách sử dụng 2 vòng lặp while và do while
-   - Thực hiện từng Method doWhileWithInput và whileWithInput, sau đó cho chú biết
-   + Sự khác nhau của 2 method này
+   Bài tập 1:
+   - Nhập từ bàn phím 1 đoạn chữ, sau đó đảo ngược đoạn chữ đó
+   - Ví dụ: sample
+   - Kết quả mong muốn: elpmas
+   ############################################################
+   Bài tập 2:
+   - Nhập từ bàn phím 1 đoạn chữ, sau đó thay thế tất cả những ký tự a thành A
+   - Ví dụ: Nhập vào dòng chữ: This is a sample
+   - Kết quả mong muốn: This is A sAmple
+   #############################################################
+   Bài tập 3:
+   - Nhập vào 1 chuỗi
+   - Kiểm tra xem 1 chuỗi nào đó có thuộc chuỗi vừa nhập vào không. Nếu có, trả về True, sai thì trả về False
+   - Ví dụ: Hãy nhập vào 1 chuỗi: Java programming is really fun
+   - Bạn muốn kiểm tra chuỗi nào: fun
+   - Is 'fun' present in the text? (Hiển thị đoạn text kết hợp với input)
+   - True
+   ##############################################################
+   Bài tập 4:
+   - Nhập vào 1 chuỗi
+   - Kiểm tra xem chuỗi đó chỉ có chứa số hay không.
+   - Gợi ý: Sử dụng Character.isDigit() kết hợp vòng lặp để kiểm tra xem 1 ký tự trong chuỗi có phải là số hay không
+   Character.isDigit('a') -> false
+   Character.isDigit('1') -> true
+   - Ví dụ: Nhập vào 1 chuỗi: 123456123
+   - Chuỗi '1123456123' không có chứa ký tự
+   - Nhập vào 1 chuỗi: 123T123
+   - Chuỗi '123T123' có chứa ký tự
+   ##############################################################
+   Bài tập 5:
+   - Đếm số lần xuất hiện của 1 chuỗi trong chuỗi khác
+   Ví dụ: Có chuỗi sau: bb abb cc gg hh bab b b bba
+   - Chuỗi cần kiểm tra: bb
+   - Kết quả mong muốn: bb xuất hiện 2 lần trong chuỗi trên
      */
-    /*
-    Bài tập 20: Viết 1 Method cho phép người dùng nhập vào passcode và kiểm tra xem passcode có hợp lệ không
-    - Yêu cầu: Passcode là 1 number đã được thiết lập sẵn: int passcode = 998877
-    - Người dùng chỉ được nhập tối đa 3 lần, sau lần thứ 4 thì thoát khỏi chương trình. Nếu nhập đúng, in ra màn hình dòng chữ: Welcome back, user!
-    - Ví dụ:
-    + Please enter your passcode? 123456
-    + Wrong passcode. 2 attempts left. Please try again: 134567
-    + Wrong passcode. 1 attempts left. Please try again: 456789
-    + Wrong passcode. 0 attempts left. Please try again in 10 minutes.
-    Exit program
-     */
-
 }
